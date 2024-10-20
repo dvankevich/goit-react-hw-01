@@ -1,5 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import "the-new-css-reset/css/reset.css";
+// Імпорт стилів нормалізації
+import "modern-normalize";
 import App from './components/App'
 import './index.css'
 
