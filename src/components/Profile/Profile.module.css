@@ -1,9 +1,10 @@
-.profile-card {
-  max-width: 360px;
+.card {
+  width: 360px;
   margin: 0 auto;
   padding-top: 24px;
   border: 1px solid black;
   border-radius: 12px;
+  overflow: hidden;
 }
 
 img {
@@ -11,9 +12,40 @@ img {
   height: 132px;
   background-color: #2a2a2a;
   border-radius: 50%;
+  margin-bottom: 30px;
 }
 
-.profile-avatar-card {
+.avatarCard {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatarName {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.avatarDescription {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.statisticList {
+  display: flex;
+  border-top: 1px solid #000;
+  background-color: lightgrey;
+}
+
+.statisticListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc(100% / 3);
+  padding: 24px 0;
+}
+
+.statisticListItem:not(:last-child) {
+  border-right: 1px solid #000;
 }
