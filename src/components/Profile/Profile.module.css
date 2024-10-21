@@ -12,3 +12,8 @@ img {
   background-color: #2a2a2a;
   border-radius: 50%;
 }
+
+.profile-avatar-card {
+  display: flex;
+  flex-direction: column;
+}

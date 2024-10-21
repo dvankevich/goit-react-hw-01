@@ -3,7 +3,7 @@ import "./Profile.module.css";
 export default function Profile () {
     return (
     <div className="profile-card">
-      <div className="">
+      <div className="profile-avatar-card">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
           alt="User avatar"
