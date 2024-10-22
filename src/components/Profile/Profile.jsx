@@ -6,7 +6,7 @@ export default function Profile({ name, tag, location, image, stats }) {
      return (
     <div className={css.card}>
       <div className={css.avatarCard}>
-        <img
+           <img className={css.avatarImg}
           src={image}
           alt="User avatar"
         />

@@ -1,6 +1,8 @@
 import './App.css'
 import Profile from './Profile/Profile'
 import userData from "../userData.json";
+import FrendList from './FriendList/FriendList';
+
 
 function App() {
   
@@ -13,6 +15,8 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+
+      <FrendList/>
     </>
   )
 }
