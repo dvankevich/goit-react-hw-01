@@ -2,31 +2,31 @@ import css from './Profile.module.css';
 
 // console.log(css);
 
-export default function Profile () {
-    return (
+export default function Profile({ name, tag, location, image, stats }) {
+     return (
     <div className={css.card}>
       <div className={css.avatarCard}>
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          src={image}
           alt="User avatar"
         />
-        <p className={css.avatarName}> Petra Marica</p>
-        <p className={css.avatarDescription}>@pmarica</p>
-        <p className={css.avatarDescription}>Salvador, Brasil</p>
+        <p className={css.avatarName}> {name}</p>
+          <p className={css.avatarDescription}>@{tag}</p>
+          <p className={css.avatarDescription}>{location}</p>
       </div>
     
         <ul className={css.statisticList}>
         <li className={css.statisticListItem}>
             <span className={css.statisticName}>Followers</span>
-          <span className={css.statisticNumber}>1000</span>
+          <span className={css.statisticNumber}>{stats.followers}</span>
         </li>
         <li className={css.statisticListItem}>
           <span className={css.statisticName}>Views</span>
-          <span className={css.statisticNumber}>2000</span>
+             <span className={css.statisticNumber}>{stats.views}</span>
         </li>
         <li className={css.statisticListItem}>
           <span className={css.statisticName}>Likes</span>
-          <span className={css.statisticNumber}>3000</span>
+             <span className={css.statisticNumber}>{stats.likes}</span>
         </li>
       </ul>
     </div>
