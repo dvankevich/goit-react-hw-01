@@ -1,14 +1,19 @@
-import FriendListItem from "../FrindListItem/FrendListItem";
+import FriendListItem from "../FriendListItem/FriendListItem";
 import css from "./FriendList.module.css"
 
-function FrendList() {
+function FrendList({friends}) {
   return (
     <ul className={css.frendList}>
-      <li><FriendListItem /></li>
-      <li><FriendListItem /></li>
-      <li><FriendListItem /></li>
-      <li><FriendListItem /></li>
-      <li><FriendListItem /></li>
+      {friends.map((friend) => {
+        return (
+          <FriendListItem
+            key={friend.id}
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+          />
+        )
+      })}
     </ul>
   );
 };

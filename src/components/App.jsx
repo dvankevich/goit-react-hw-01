@@ -2,7 +2,7 @@ import './App.css'
 import Profile from './Profile/Profile'
 import userData from "../userData.json";
 import FrendList from './FriendList/FriendList';
-
+import friends from "../friends.json";
 
 function App() {
   
@@ -16,7 +16,7 @@ function App() {
         stats={userData.stats}
       />
 
-      <FrendList/>
+      <FrendList friends={friends}/>
     </>
   )
 }
