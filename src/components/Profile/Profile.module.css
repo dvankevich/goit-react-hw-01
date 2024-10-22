@@ -23,6 +23,7 @@ img {
 }
 
 .avatarName {
+  color: #1a1f1a;
   font-size: 30px;
   font-weight: 700;
 }
@@ -30,6 +31,7 @@ img {
 .avatarDescription {
   font-size: 22px;
   font-weight: 500;
+  color: gray;
 }
 
 .statisticList {
@@ -48,4 +50,14 @@ img {
 
 .statisticListItem:not(:last-child) {
   border-right: 1px solid #000;
+}
+
+.statisticName {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.statisticNumber {
+  font-weight: 600;
+  font-size: 18px;
 }

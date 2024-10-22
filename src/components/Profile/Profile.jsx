@@ -17,16 +17,16 @@ export default function Profile () {
     
         <ul className={css.statisticList}>
         <li className={css.statisticListItem}>
-          <span>Followers</span>
-          <span>1000</span>
+            <span className={css.statisticName}>Followers</span>
+          <span className={css.statisticNumber}>1000</span>
         </li>
         <li className={css.statisticListItem}>
-          <span>Views</span>
-          <span>2000</span>
+          <span className={css.statisticName}>Views</span>
+          <span className={css.statisticNumber}>2000</span>
         </li>
         <li className={css.statisticListItem}>
-          <span>Likes</span>
-          <span>3000</span>
+          <span className={css.statisticName}>Likes</span>
+          <span className={css.statisticNumber}>3000</span>
         </li>
       </ul>
     </div>
