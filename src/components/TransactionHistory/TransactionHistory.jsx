@@ -2,6 +2,7 @@ import css from "./TransactionHistory.module.css";
 
 export default function TransactionHistory({transactions}) {
   return (
+    <>
     <table className={css.trTable}>
       <thead className={css.trTableHead}>
         <tr>
@@ -12,17 +13,19 @@ export default function TransactionHistory({transactions}) {
       </thead>
 
       <tbody>
-        <tr className={css.trTableRow}>
-          <td className={css.trTableColumn}>Invoice</td>
-          <td className={css.trTableColumn}>125</td>
-          <td className={css.trTableColumn}>USD</td>
-        </tr>
-        <tr className={css.trTableRow}>
-          <td className={css.trTableColumn}>Withdrawal</td>
-          <td className={css.trTableColumn}>85</td>
-          <td className={css.trTableColumn}>USD</td>
-        </tr>
+        {
+          transactions.map(({ id, type, amount, currency }) => {
+            return (
+              <tr className={css.trTableRow} key={id}>
+                <td className={css.trTableColumn}>{type}</td>
+                <td className={css.trTableColumn}>{amount}</td>
+                <td className={css.trTableColumn}>{currency}</td>
+              </tr>
+            );
+          })
+        }
       </tbody>
     </table>
+    </>
   );
 };
